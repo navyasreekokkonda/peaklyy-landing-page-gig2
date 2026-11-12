@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slotly | Online booking and payments for independent salons</title>
+<meta name="description" content="Slotly lets clients book and pay online while you stay focused on the chair. Start free for 14 days.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top"><i></i>Slotly</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="#value">Why Slotly</a></li><li><a href="#features">Features</a></li><li><a href="#proof">Customers</a></li><li><a href="design-system.html">Design system</a></li></ul></nav>
+<a class="btn btn-primary nav-cta" href="#start">Start free</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<h1>Fill your calendar without answering a single DM.</h1>
+<p class="sub">Slotly gives your salon a booking page that takes appointments, deposits and reminders for you, so no-shows drop and your evenings are your own.</p>
+<div class="cta-row"><a class="btn btn-primary" href="#start">Start free for 14 days</a><a class="btn btn-ghost" href="#features">See how it works</a></div>
+<p class="note">No card needed. Set up in about 10 minutes.</p>
+</div>
+<div class="mock" aria-label="Interactive booking preview">
+<h3>Book a trim with Maya</h3><small>Choose a day, then a time</small>
+<div class="days" role="group" aria-label="Day">
+<button aria-pressed="true" data-day="Mon">Mon</button><button aria-pressed="false" data-day="Tue">Tue</button><button aria-pressed="false" data-day="Wed">Wed</button><button aria-pressed="false" data-day="Thu">Thu</button><button aria-pressed="false" data-day="Fri">Fri</button></div>
+<div class="slots" role="group" aria-label="Time">
+<button aria-pressed="false">9:30</button><button aria-pressed="false">10:15</button><button disabled>11:00</button><button aria-pressed="false">12:30</button><button aria-pressed="false">2:00</button><button disabled>3:15</button></div>
+<button class="btn btn-primary" id="book" disabled>Book appointment</button>
+<div id="toast" role="status"></div>
+</div>
+</div></section>
+
+<div class="trust"><div class="wrap"><span>Trusted by 2,400 independent studios</span><span>Harbor Cuts</span><span>Lune Hair</span><span>Oak &amp; Thread</span><span>Studio Nine</span></div></div>
+
+<section id="value"><div class="wrap">
+<h2>Less admin. More time with clients.</h2>
+<p class="sub">Three things that change your week from the first day.</p>
+<div class="value-grid">
+<div class="v"><b>1</b><h3>Clients book themselves</h3><p>A link in your bio takes bookings around the clock, even while you are mid-colour.</p></div>
+<div class="v"><b>2</b><h3>Deposits cut no-shows</h3><p>Collect a deposit at booking. Studios using Slotly see 62% fewer missed appointments.</p></div>
+<div class="v"><b>3</b><h3>Reminders run themselves</h3><p>Text and email reminders go out automatically, and clients can reschedule in one tap.</p></div>
+</div></div></section>
+
+<section id="features" class="features"><div class="wrap">
+<h2>Everything a busy studio needs in one place</h2>
+<p class="sub">Pick a feature to see what it does.</p>
+<div class="tabs">
+<div role="tablist" aria-label="Features" aria-orientation="vertical">
+<button role="tab" id="t1" aria-controls="p1" aria-selected="true">Online booking page</button>
+<button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Payments and deposits</button>
+<button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Team calendar</button>
+</div>
+<div>
+<div role="tabpanel" id="p1" aria-labelledby="t1"><h3>A booking page that matches your brand</h3><p>Add your services, prices and photos. Clients pick a stylist and a time in under a minute on any phone.</p><ul><li>Works from Instagram, Google and your own site</li><li>Buffer times and service lengths per stylist</li></ul></div>
+<div role="tabpanel" id="p2" aria-labelledby="t2" hidden><h3>Get paid before the appointment</h3><p>Take a deposit or full payment when the client books, and pay out to your bank in two days.</p><ul><li>Cards, Apple Pay and Google Pay</li><li>Automatic refunds under your cancellation policy</li></ul></div>
+<div role="tabpanel" id="p3" aria-labelledby="t3" hidden><h3>One calendar for the whole team</h3><p>See every chair at a glance, move appointments by dragging, and give each stylist their own view.</p><ul><li>Time off and breaks that block bookings</li><li>Daily summary sent to each stylist</li></ul></div>
+</div></div>
+</div></section>
+
+<section id="proof"><div class="wrap">
+<h2>Studios that switched never went back</h2>
+<div class="stats"><div><b>62%</b>fewer no-shows</div><div><b>5 hrs</b>admin saved each week</div><div><b>4.8/5</b>average rating from 3,100 reviews</div></div>
+<div class="quotes">
+<blockquote><p>I used to spend my Sundays replying to messages. Now bookings just appear.</p><footer>Maya Ortiz, owner, Harbor Cuts</footer></blockquote>
+<blockquote><p>Deposits paid for the subscription in the first week.</p><footer>Jules Tan, founder, Lune Hair</footer></blockquote>
+<blockquote><p>Set up took one lunch break. My team loved it straight away.</p><footer>Priya Nair, manager, Studio Nine</footer></blockquote>
+</div></div></section>
+
+<section id="start" class="cta"><div class="wrap"><div class="cta-box">
+<div><h2>Start your free 14 days</h2><p class="sub">Enter your email and we will set up your booking page with you.</p></div>
+<div>
+<form id="lead" novalidate><label for="email">Work email<input id="email" name="email" type="email" autocomplete="email" placeholder="you@studio.com" aria-describedby="email-err"></label><span class="err" id="email-err" aria-live="polite"></span>
+<button class="btn btn-primary" type="submit">Create my booking page</button></form>
+<p id="ok" role="status">You are in. Check your inbox for a link to finish setup.</p>
+</div></div></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<div><a class="logo" href="#top"><i></i>Slotly</a><p style="margin-top:.6rem;max-width:30ch">Booking and payments for independent salons.</p></div>
+<div><h4>Product</h4><ul><li><a href="#features">Features</a></li><li><a href="#proof">Customers</a></li><li><a href="design-system.html">Design system</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+<p style="width:100%">&copy; 2026 Slotly. Sample content for design demonstration.</p>
+</div></footer>
+<div class="sticky"><a class="btn btn-primary" href="#start">Start free for 14 days</a></div>
+<script src="js/main.js" defer></script>
+</body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slotly design system</title><link rel="icon" href="assets/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><header><div class="wrap"><a class="logo" href="index.html"><i></i>Slotly</a><a class="btn btn-ghost nav-cta" style="display:inline-flex" href="index.html">Back to landing page</a></div></header>
+<main><section><div class="wrap">
+<h1 style="font-size:clamp(2rem,5vw,3.2rem)">Landing page design system</h1>
+<p class="sub">Colours, type, buttons with every state, form states and breakpoints used on the Slotly landing page.</p>
+
+<h2 style="margin-top:3rem">Colour</h2>
+<div class="ds-grid">
+<div class="sw"><i style="background:#231942"></i><span>Ink #231942<br>Text, dark sections</span></div>
+<div class="sw"><i style="background:#5B3FD1"></i><span>Violet #5B3FD1<br>Selection, CTA band</span></div>
+<div class="sw"><i style="background:#35D0A8"></i><span>Mint #35D0A8<br>Primary action</span></div>
+<div class="sw"><i style="background:#2BB893"></i><span>Mint dark #2BB893<br>Hover</span></div>
+<div class="sw"><i style="background:#E9E4F7"></i><span>Lilac #E9E4F7<br>Disabled, icons</span></div>
+<div class="sw"><i style="background:#F7F5FC"></i><span>Page #F7F5FC<br>Background</span></div></div>
+
+<h2 style="margin-top:3rem">Type</h2>
+<p style="font:800 3rem var(--display);margin-top:1rem">Sora 800 / H1 70px</p>
+<p style="font:700 2rem var(--display)">Sora 700 / H2 43px</p>
+<p style="font:600 1.25rem var(--display)">Sora 600 / H3 20px</p>
+<p>Figtree 400 / Body 17px, line height 1.6, max 50 characters wide for intro copy.</p>
+
+<h2 style="margin-top:3rem">Buttons and states</h2>
+<div class="row">
+<div><button class="btn btn-primary">Default</button><small>Default</small></div>
+<div><button class="btn btn-primary is-hover">Hover</button><small>Hover</small></div>
+<div><button class="btn btn-primary is-active">Pressed</button><small>Pressed</small></div>
+<div><button class="btn btn-primary is-focus">Focus</button><small>Focus</small></div>
+<div><button class="btn btn-primary" disabled>Disabled</button><small>Disabled</small></div>
+<div><button class="btn btn-primary loading">Loading</button><small>Loading</small></div></div>
+<div class="row">
+<div><button class="btn btn-ghost">Default</button><small>Secondary</small></div>
+<div><button class="btn btn-ghost is-hover">Hover</button><small>Secondary hover</small></div></div>
+
+<h2 style="margin-top:3rem">Form field states</h2>
+<div class="row" style="align-items:flex-start;max-width:640px">
+<label style="flex:1;min-width:220px">Default<input placeholder="you@studio.com"></label>
+<label style="flex:1;min-width:220px">Error<input aria-invalid="true" style="border-color:#C0392B" value="you@studio"><span style="color:#C0392B;font-size:.9rem">Enter a valid work email.</span></label></div>
+
+<h2 style="margin-top:3rem">Breakpoints</h2>
+<table class="bp"><tr><th>Name</th><th>Width</th><th>Layout changes</th></tr>
+<tr><td>Mobile</td><td>under 820px</td><td>Single column, menu button, sticky bottom CTA, tabs scroll sideways</td></tr>
+<tr><td>Tablet</td><td>820px to 860px</td><td>Full navigation, hero stacks until 860px</td></tr>
+<tr><td>Desktop</td><td>860px and up</td><td>Two-column hero, vertical feature tabs, 1120px max content width</td></tr></table>
+</div></section></main></body></html>
